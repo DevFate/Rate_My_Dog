@@ -1,0 +1,81 @@
+body{
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.rating-css{
+    height: 250px;
+    width: 600px;
+    background:#EA445A;
+    border: 4px solid #838383;
+    padding: 20px;
+}
+.rating-css div{
+    color: #ffe400;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.rating-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating-container input[type="radio"] {
+    display: none;
+  }
+  
+  .rating-container label {
+    width: 100px;
+    height: 100px;
+    background: url('images/star-checked.png') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  .rating-container input[type="radio"]:checked + label ~ label {
+    background: none no-repeat;
+    background-size: cover;
+  }
+  
+  button{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: white;
+    color: black;
+  }
+  .container{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #74F0ED;
+  }
+  #heading {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: gray;
+    padding: 20px 0;
+  }
+  li {
+    font-size: 20px;
+    background-color: yellow;
+}
+<ul id="history"></ul>
